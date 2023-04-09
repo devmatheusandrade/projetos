@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppinsdisplay=swap');
+
+
+body{
+    background-color: #000000;
+    color: #FFFFFF;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.loudhead{
+    width: 70px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    color: white;
+}
+
+main{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between
+}
+
+.leftpage{
+    margin: 40px;
+    margin-left: 150px;
+    background-color: rgb(24, 98, 163);
+}
+
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-size: 14px;
+    padding-top: none;
+    margin-top: none;
+}
+
+h1{
+    font-size: 48px;
+    padding: 20px;
+    padding-bottom: none;
+    margin-bottom: none
+    ;
+}
+
+article{
+    width: 50%;
+    height: 100%;
+}
+
+
