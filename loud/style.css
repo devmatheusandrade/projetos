@@ -1,64 +1,189 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppinsdisplay=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Red+Hat+Display:wght@700&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    
+}
 
-body{
-    background-color: #000000;
-    color: #FFFFFF;
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-    padding: 15px;}
-
-header{
+.cabeçalho{
+    height: 130px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    height: 100px;
+    justify-content: space-around;
+    padding: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    background-color: #0d0d0d
 }
 
-.loudhead{
-    width: 70px;
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
 }
 
-li{
-    display: inline-block;
-    margin: 20px;
+
+.navmenu1{
+    display: flex;
+    gap: 20px;
     color: white;
 }
 
-main{
+.navmenu2{
     display: flex;
-    margin-top: 50px;
-    justify-content: space-between
+    gap: 20px;
 }
 
-.leftpage{
-    margin: 40px;
-    margin-left: 150px;
-    background-color: rgb(24, 98, 163);
+main{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+    height: 770px;
+    justify-content: space-around;
+    gap: 40px;
 }
 
 
-p{
-    line-height: 20px;
-    max-width: 500px;
-    font-size: 14px;
-    padding-top: none;
-    margin-top: none;
+
+.titulo{
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+    line-height: 70px;
 }
 
-h1{
-    font-size: 48px;
-    padding: 20px;
-    padding-bottom: none;
-    margin-bottom: none
-    ;
+strong{
+    color: #13ff00;
+    font-style: italic;
 }
 
-article{
-    width: 50%;
+.conteudo1{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+
+
+.quadrados{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: white;
+    border-color: white;
+    margin-top: 30px;
+    background-size: cover;
+}
+
+.quadrado1{
+    height: 200px;
+    width: 200px;
+    background-image: url(imagens/cris.png);
+    border-radius: 20px;
+    border-color: white;
+    background-size: cover;
+    box-shadow: 2px 2px 2px #0d0d0d;
+}
+
+.quadrado2{
+    height: 200px;
+    width: 200px;
+    background-image: url(imagens/littlegame.png);
+    border-radius: 20px;
+    border-color: white;
+    background-size: cover;
+}
+
+.quadrado3{
+    height: 200px;
+    width: 200px;
+    background-image: url(imagens/voltan.png);
+    border-radius: 20px;
+    border-color: white;
+    background-size: cover;
+}
+
+.botao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+
+section.imgright{
+    display: flex;
     height: 100%;
+    width: 100%;
+    background-image: url(imagens/camisetas.webp);
+    background-size: cover;
 }
 
+button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   button::before {
+    left: -10px;
+    background: #70e259;
+   }
+   
+   button::after {
+    right: -10px;
+    background: #279a18;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 58%;
+   }
+   
+   button:hover span {
+    color: #000000;
+    transition: 0.3s;
+   }
+   
+   button span {
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
 
+   .rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    background-color: #0d0d0d
+   }
