@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root{
+    --fonte1: Verdana, Geveva, Tahoma, sans-serif;
+    --fonte2: 'Indie Flower', cursive;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main, html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.8em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3vw;
+}
+
+
+
+section.normal{
+    background-image: url(/image/papel1.avif);
+    color: black;
+    background-size: cover;
+
+}
+
+section.imagem{
+    display: flex;
+    background-color: #6B6660;
+    color: white;
+    box-shadow: inset 6px 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(37, 35, 35, 0.377);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(/image/flor.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
