@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/images/filmmaker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 90vh;
+}
+
+header.cabeçalho{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    width: 100vw;
+}
+
+nav.navmenu1 > a{
+    text-decoration: none;
+    color: white;
+}
+
+nav.navmenu1{
+    display: flex;
+    gap: 30px;
+    font-size: 1.5rem;
+}
+
+img.fundo1{
+    background-size: cover;
+    width: 100vw;
+}
+
+div.textos{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+h1.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10em;
+}
+
+
+
+
+
+
+footer.rodape{
+    background-color: black;
+    height: 10vh;
+}

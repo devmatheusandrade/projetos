@@ -21,19 +21,19 @@ body{
     padding: 0px 10px 10px 10px;
     font-family: 'Red Hat Display', sans-serif;
     color: white;
-    background-color: #0d0d0d
+    background-color: rgb(0, 0, 0);
 }
 
-a{
+nav.navmenu1 > a{
     color: white;
     text-decoration: none;
     font-size: 23px;
     margin-right: 20px;
 }
 
-a:hover{
-    background-color: #13ff00;
-    color: #0d0d0d;
+nav.navmenu1 > a:hover{
+    background-color: #616361;
+    color: black;
     border-radius: 15px;
     transition-duration: 0.3s;
 }
@@ -55,7 +55,7 @@ nav > a {
     display: flex;
     gap: 60px;
     color: white;
-    border-right: 0.6px solid #13ff00;
+    border-right: 0.6px solid #393b39;
     margin-right: 20px;
 }
 
@@ -65,7 +65,7 @@ nav > a {
 }
 
 main{
-    background-color: #000000;
+    background-color: #0d0d0d;
     color: white;
     display: flex;
     box-sizing: border-box;
@@ -79,22 +79,18 @@ main{
 .titulo{
     font-family: 'DM Serif Display', serif;
     font-size: 60px;
-    line-height: 70px;
+    line-height: 80px;
+    
 }
 
 strong{
-    color: #13ff00;
+    color: rgb(63, 63, 63);
     font-style: italic;
 }
 
 strong.eu{
     color: white;
     font-size: 20px;
-}
-
-p{
-    text-align: justify;
-
 }
 
 .conteudo1{
@@ -106,43 +102,21 @@ p{
     padding-top: 60px;
 }
 
+a.linksocial:hover{
+    box-shadow: red;
+}
 
-.quadrados{
+div.socialmedia{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    border: white;
-    border-color: white;
-    margin-top: 30px;
-    background-size: cover;
+    padding-top: 40px;
 }
 
-.quadrado1{
-    height: 200px;
-    width: 200px;
-    background-image: url(imagens/cris.png);
-    border-radius: 20px;
-    border-color: white;
-    background-size: cover;
-    box-shadow: 2px 2px 2px #0d0d0d;
-}
-
-.quadrado2{
-    height: 200px;
-    width: 200px;
-    background-image: url(imagens/littlegame.png);
-    border-radius: 20px;
-    border-color: white;
-    background-size: cover;
-}
-
-.quadrado3{
-    height: 200px;
-    width: 200px;
-    background-image: url(imagens/voltan.png);
-    border-radius: 20px;
-    border-color: white;
-    background-size: cover;
+img.logorede{
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .botao{
@@ -158,12 +132,17 @@ span{
     font-weight: bold;
 }
 
+span > a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
 
 section.imgright{
     display: flex;
     height: 100%;
     width: 100%;
-    background-image: url(imagens/camisetas.webp);
+    background-image: url(/images/filmmaker.jpg);
     background-size: cover;
 }
 
@@ -194,12 +173,14 @@ button {
    
    button::before {
     left: -10px;
-    background: #70e259;
+    background: #13ff00
+    ;
    }
    
    button::after {
     right: -10px;
-    background: #279a18;
+    background: #13ff00
+    ;
    }
    
    button:hover::before,
@@ -207,13 +188,13 @@ button {
     width: 58%;
    }
    
-   button:hover span {
-    color: #000000;
-    transition: 0.3s;
+   button:hover span >a {
+    color: white;
+    transition: 0.6s;
    }
    
    button span {
-    color: #000000;
+    color: black;
     font-size: 18px;
     transition: all 0.3s ease-in;
    }
@@ -226,5 +207,7 @@ button {
     padding: 15px;
     font-family: 'Red Hat Display', sans-serif;
     color: white;
-    background-color: #0d0d0d
+    background-color: black;
    }
+
+   
