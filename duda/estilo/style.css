@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2D5DD;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+    height: 5vh;
+    width: 100vw;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    font-size: 1.5rem;
+}
+
+li > a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+main{
+    height: 100vh;
+}
+.background{
+    background-image: url(../images/ahri.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: right right;
+    background-size: cover;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 20px;
+}
