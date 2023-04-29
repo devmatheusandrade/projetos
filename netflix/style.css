@@ -105,12 +105,13 @@ header .logo img {
 .content{
     position: relative;
     z-index: 1;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .movieTitle {
-    max-width: 500px;
+    max-width: 600px;
 }
+ 
 
 .banner .content h4 {
     color: rgba(255, 255, 2555, 0.5);
@@ -229,7 +230,7 @@ header .logo img {
     max-width: 32px;
 }
 
-@media screen and (max-widht: 991px) {
+@media screen and (max-widht:991px) {
     header{
         padding: 20px 50px;
         flex-direction: column;
@@ -255,6 +256,7 @@ header .logo img {
         max-width: 90%;
     }
 }
+
 
 @media screen and (max-width: 600px) {
     header{

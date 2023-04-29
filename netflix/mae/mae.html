@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo"> <img src="images/logonetflix.png" alt="Logo.png"></a>
+        <a href="#" class="logo"> <img src="../images/logonetflix.png" alt="Logo.png"></a>
         <ul class="navigation">
-            <li><a href="pag1/pag01.html">Home</a></li>
+            <li><a href="../pag1/pag01.html">Home</a></li>
             <li><a href="#">Tv Shows</a></li>
             <li><a href="#">Movies</a></li>
             <li><a href="#">Lateste</a></li>
@@ -20,43 +20,30 @@
         </ul>
         <div class="search">
             <input type="text" placeholder="Search">
-            <img src="images/icon-lupa.png" class="fa-search" alt="">
+            <img src="../images/icon-lupa.png" class="fa-search" alt="">
         </div>
     </header>
     <div class="banner">
-        <img src="images/banner.png" class="bg" alt="Banner">
+        <img src="../images/euemamae.png" class="bg" alt="Banner">
         <div class="content">
-            <img src="images/disney.png" class="movieTitle" alt="movieTittle">
+
+            <img src="../images/peça.png" class="movieTittle" alt="">
+
             <h4>
-                <span>2021</span>
+                <span>2003</span>
                 <span><i>12+</i></span>
-                <span>18 mouths</span>
-                <span>Romance</span>
+                <span>19 years</span>
+                <span>Aventura</span>
             </h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni numquam tempora iusto temporibus aliquam rem expedita est corporis! Dicta, error? Facere distinctio debitis rerum cumque voluptas et hic. Aperiam, quas!</p>
             <div class="buttons">
-                <a href="https://www.youtube.com/watch?v=IL-W3xyr7I0&list=PLjhGmDE_NxXG8ir02WYnPYx9rA4VSvLVD&index=18" target="_blank"> ▶️ Play</a>
+                <a href="#">Play</a>
                 
                 <a href="#">My list</a>
             </div>
         </div>
-        <a class="play" onclick="toggleVideo();"><img src="images/icon-trailer.png" alt="">Watch Trailer</a>
+        <a class="play" onclick="toggleVideo();"><img src="../images/icon-trailer.png" alt="">Watch Trailer</a>
     </div>
-
-    <div class="trailer">
-        <video src="#" controls="true" autoplay="true"></video>
-        <img src="images/icon-fechar.png" class="close" alt="close" onclick="toggleVideo();">
-    </div>
-
-    <script>
-        function toggleVideo(){
-            const trailer = document.querySelector('.trailer');
-            const video = document.querySelector('video');
-            trailer.classList.toggle('active')
-            video.currentTime = 0;
-            video.pause();
-        }
-    </script>
 
 </body>
 </html>
